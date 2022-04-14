@@ -1,1 +1,250 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;700&display=swap');
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 62.5%;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .user{
+    float: right;
+    display: flex;
+}
+
+.ejecutivo p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+.ejecutivo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+
+
+.ejecutivo span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.salir{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.salir a{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888888;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+
+.branding{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.branding img{
+    width: 140px;
+    margin: 5px 0 0 10px;
+}
+
+main{
+    background-image: url("./assets/background-02.jpg");
+    background-size: cover;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search{
+    background-color: #fff;
+    width: 366px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.search-content{
+    height: 208px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-content p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #505050;
+    margin: 16px 0;
+}
+
+.search-content span{
+    margin: 5px 0;
+    text-align: right;
+}
+
+.search-btn, .box-footer{
+    height: 42px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+h3.title{
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0071CE;
+    line-height: 2.2rem;
+}
+
+h3.title::after{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #0071CE;
+    margin-top: 2px;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./assets/ico-people.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 47px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #505050;
+    background-color: #F0F0F0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.13)
+}
+
+input[type="text"]::placeholder{
+    color: #acacac;
+}
+
+
+.btn{
+    min-width: 130px;
+    height: 30px;
+    background-color: #0071CE;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #0d86e9;
+    color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.box{
+    width: 800px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.13)
+}
+
+.box-title{
+    margin-bottom: 20px;
+}
+
+.box-body{
+    background-color: #fff;
+    min-height: 400px;
+    max-height: 420px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h3.title.white{
+    color: white
+}
+
+.box-body h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+table {
+    font-size: 1.1rem;
+}
+
+.modal-content{
+    border-radius: 6px 6px 0 0;
+}
+
+.modal-header{
+    background-color: #009539;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-body p{
+    font-size: 2.2rem;
+}
+
+.modal-footer{
+    background-color: #F0F0F0;
+}
+
+.modal-footer .btn {
+    background-color: #A3A3A3;;
+}
+
+.modal-footer .btn:hover {
+    background-color: #8a8a8a;;
+}
+
+
+
