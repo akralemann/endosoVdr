@@ -5,12 +5,21 @@
             <p>Complete estos datos</p>
             <div class="input-group">
                 <span></span>
-                <input type="text" id="txtRut" placeholder="RUT">
+                <input 
+                    type="text" 
+                    id="txtRut" 
+                    placeholder="RUT"
+                    name="txtRut"
+                    [(ngModel)]="rut"
+                >
             </div>
-            <span>Sin puntos y con guión</span>
+            <span *ngIf="valido" class="validacion">Sin puntos y con guión</span>
+            <span *ngIf="!valido" class="validacion alerta">Formato incorrecto</span>
         </div>
         <div class="search-btn">
-            <button id="btnSearch" class="btn">Buscar</button>
+            <form (ngSubmit)="validarRut()" >
+                <button id="btnSearch" class="btn">Buscar</button>
+             </form>
         </div>
     </div>
 </main>

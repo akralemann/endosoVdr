@@ -14,7 +14,7 @@ const routes: Routes = [
         component: BusquedaComponent
       },
       {
-        path: 'listado',
+        path: 'listado/:rut',
         component: ListadoComponent
       },
       {
