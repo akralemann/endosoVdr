@@ -1,0 +1,23 @@
+@media (max-width: 414px) {
+    main.home{
+        align-items: flex-end;
+        padding-bottom: 70px;
+        
+        background-position: center;
+    }
+
+    main{
+        background-image: url(/img/background-mobile.jpg);
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+    }
+    .box-body{
+        height: 70vh;
+    }
+  }
